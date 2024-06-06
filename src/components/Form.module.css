@@ -1,12 +1,14 @@
 .container {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: rgb(255, 255, 255);
+	flex-wrap: wrap;
 	width: 800px;
-	margin: 40px;
-	box-shadow: 4px 4px 40px rgb(177, 173, 173);
+	align-items: center;
+	justify-content: center;
+	-webkit-box-shadow: 0px 0px 20px -4px rgba(153, 26, 153, 1);
+	-moz-box-shadow: 0px 0px 20px -4px rgba(153, 26, 153, 1);
+	box-shadow: 0px 0px 20px -4px rgba(153, 26, 153, 1);
+	margin: 40px 0;
+	padding: 15px;
 }
 .container div:first-child {
 	margin-top: 30px;
@@ -28,7 +30,7 @@ input:focus {
 button {
 	border: none;
 	padding: 10px;
-	width: 90%;
+	width: 720px;
 	margin-top: 10px;
 	margin-bottom: 15px;
 	background-color: rgb(164, 71, 250);
@@ -40,7 +42,7 @@ button {
 	transition: all 0.4s ease;
 }
 button:hover {
-	-webkit-box-shadow: 0px 0px 26px -4px rgba(153, 26, 153, 1);
-	-moz-box-shadow: 0px 0px 26px -4px rgba(153, 26, 153, 1);
-	box-shadow: 0px 0px 26px -4px rgba(153, 26, 153, 1);
+	-webkit-box-shadow: 0px 0px 20px -4px rgba(153, 26, 153, 1);
+	-moz-box-shadow: 0px 0px 20px -4px rgba(153, 26, 153, 1);
+	box-shadow: 0px 0px 20px -4px rgba(153, 26, 153, 1);
 }
