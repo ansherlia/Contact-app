@@ -1,26 +1,21 @@
-import styles from "./ContactItemStyle.module.css"
-function CourseItem({
-	data: { id, name, lastName, phone, email },
-	deleteHandler={ deleteHandler },
-}) {
-	return (
-		<li key={id} className={styles.container}>
-			<p>
-				{name} {lastName}
-			</p>
-			<p>
-				<span>{email} </span>
-				<i className="fa-brands fa-mailchimp"></i>
-			</p>
-			<p>
-				{phone} <i className="fa-solid fa-phone-volume"></i>
-			</p>
-			<button onClick={() => deleteHandler(id)}>
-				
-				<i className="fa-solid fa-trash"></i>
-			</button>
-		</li>
-	);
+import { FaTrash } from "react-icons/fa";
+
+import styles from "./ContactItem.module.css";
+
+function ContactItem({ contact, deleteHandler = { deleteHandler } }) {
+  const { name, lastName, email, numberPhone, id } = contact;
+  return (
+    <li className={styles.list}>
+      <h4>
+        {name} {lastName}
+      </h4>
+      <h4>{email}</h4>
+      <h4>{numberPhone}</h4>
+      <button onClick={() => deleteHandler(id)}>
+        <FaTrash />
+      </button>
+    </li>
+  );
 }
 
-export default CourseItem;
+export default ContactItem;

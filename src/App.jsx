@@ -1,13 +1,12 @@
-import Header from "./components/Header.jsx";
-import Form from "./components/Form.jsx";
+import Form from "./components/Form";
+import Header from "./Layouts/Layout";
 import "./global.css";
 function App() {
-	return (
-		<div>
-			<Header />
-			<Form />
-		</div>
-	);
+  return (
+    <Header>
+      <Form />
+    </Header>
+  );
 }
 
 export default App;

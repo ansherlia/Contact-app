@@ -1,0 +1,19 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  background-color: rgb(77, 122, 176);
+  color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0 25px;
+}
+.list button {
+  border: none;
+  height: fit-content;
+  background-color: rgb(77, 122, 177);
+  color: rgb(156, 21, 21);
+  font-size: 1.3rem;
+  cursor: pointer;
+}

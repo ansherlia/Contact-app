@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(77, 122, 176);
+  padding: 15px 100px;
+  border-radius: 10px;
+}
+.header h3 {
+  background-color: rgb(77, 122, 176);
+  margin-top: 10px;
+  font-size: 1.2rem;
+  margin: 0 0 100px;
+  color: rgb(255, 255, 255);
+  padding: 15px 40px;
+  border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer h1 {
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgb(77, 122, 177);
+  padding: 7px 100px;
+  border-radius: 10px;
+}
